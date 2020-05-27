@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "strict": true,
+    "jsx": "react",
+    "jsxFactory": "h"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "types/**/*.d.ts",
+  ]
+}
