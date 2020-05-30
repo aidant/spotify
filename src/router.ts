@@ -3,9 +3,10 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-export const router = new VueRouter({
+export const getRouter = () => new VueRouter({
   routes: [
-    { path: '/', redirect: '/hello-world' },
-    { path: '/hello-world', component: () => import('./pages/HelloWorld.vue') }
+    { path: '/', redirect: '/landing' },
+    { path: '/landing', component: () => import('./pages/Landing.vue') },
+    { path: '/profile', component: () => import('./pages/Profile.vue') },
   ]
 })

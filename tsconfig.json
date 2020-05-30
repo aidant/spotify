@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["esnext", "dom"],
-    "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "esnext",
     "jsx": "react",
-    "jsxFactory": "h"
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "types/**/*.d.ts",
-  ]
+    "experimentalDecorators": true
+  }
 }

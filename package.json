@@ -1,13 +1,15 @@
 {
-  "name": "spotify",
+  "name": "noise",
   "version": "0.0.0",
   "private": true,
+  "description": "Music Visualization Experiment",
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
     "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
     "vue-router": "^3.3.0"
   },
   "devDependencies": {

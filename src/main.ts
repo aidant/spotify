@@ -1,10 +1,14 @@
 import Vue from 'vue'
-import { router } from './router'
+import Header from './components/Header.vue'
+import { getRouter } from './router'
+import { parseSpotifyCallback } from './utilities/spotify-authorization'
 
-const application = document.createElement('main')
-document.body.append(application)
+parseSpotifyCallback('/profile')
 
-new Vue({
-  router,
-  render: h => h('main', [h('router-view')])
-}).$mount(application)
+addEventListener('load', () => {
+  new Vue({
+    el: document.body,
+    router: getRouter(),
+    render: h => h('body', [h(Header), h('router-view')])
+  })
+})
