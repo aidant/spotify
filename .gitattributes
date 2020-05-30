@@ -1,2 +1,2 @@
-webpack.config.js linguist-generated
+vue.config.js linguist-detectable=false
 types/**/*.d.ts linguist-generated
