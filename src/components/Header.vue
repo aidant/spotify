@@ -2,7 +2,6 @@
   <nav>
     <ul>
       <li>
-        <a :href="login">Login</a>
       </li>
     </ul>
   </nav>
@@ -11,11 +10,9 @@
 <script lang="ts">
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import { getSpotifyAuthenticationUrl } from '../utilities/spotify-authorization'
 
 @Component
 export default class Header extends Vue {
-  login = getSpotifyAuthenticationUrl()
 }
 
 </script>

@@ -1,14 +1,15 @@
+import 'normalize.css'
 import Vue from 'vue'
-import Header from './components/Header.vue'
 import { getRouter } from './router'
+import './style.css'
 import { parseSpotifyCallback } from './utilities/spotify-authorization'
 
-parseSpotifyCallback('/profile')
+parseSpotifyCallback()
 
 addEventListener('load', () => {
   new Vue({
     el: document.body,
     router: getRouter(),
-    render: h => h('body', [h(Header), h('router-view')])
+    render: h => h('body', [h('router-view')])
   })
 })

@@ -1,5 +1,7 @@
 <template>
-
+  <div>
+    {{ username }}
+  </div>
 </template>
 
 <script lang="ts">
@@ -9,8 +11,11 @@ import { getProfile } from '../utilities/spotify'
 
 @Component
 export default class Profile extends Vue {
-  mounted () {
-    getProfile().then(console.log, console.error)
+  username: string = null
+
+  async mounted () {
+    const profile = await getProfile()
+    this.username = profile.display_name
   }
 }
 </script>

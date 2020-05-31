@@ -8,6 +8,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-router": "^3.3.0"
