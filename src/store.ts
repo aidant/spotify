@@ -11,5 +11,5 @@ const store = Vue.observable<Store>({
 export const getAuthorization = () => store.authorization
 export const isAuthenticated = () => !!store.authorization
 
-export const setAuthorization = (type: string, credentials: string) =>
-  store.authorization = `${type} ${credentials}`
+export const setAuthorization = (authorization: string) =>
+  store.authorization = authorization
